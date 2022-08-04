@@ -1,0 +1,55 @@
+INSERT INTO departments (name)
+VALUES  ("Founder")
+        ("Corporate")
+        ("Marketing"),
+        ("Sales"),
+        ("Finance"),
+        ("Data Analysis"),
+        ("Production"),
+        ("Research"),
+        ("Human Resources"),
+        ("Security");
+
+INSERT INTO roles (title, salary, department_id)
+VALUES  ("Founder", 3000000, 1),
+        ("CEO", 1300000, 2),
+        ("CFO", 1100000, 2),
+        ("COO", 1000000, 2),
+        ("Marketing Manager", 500000, 3),
+        ("Marketing Specialist", 370000, 3),
+        ("Marketing Assistant", 150000, 3),
+        ("Sales Manager", 610000, 4),
+        ("Sales Representative", 290000, 4),
+        ("Field Sales Repsentative", 400000, 4),
+        ("Company Accountant", 650000, 5),
+        ("Financial Assistant", 400000, 5),
+        ("Data Analyst", 560000, 6),
+        ("Production Manager", 450000, 7),
+        ("Inventory Manager", 330000, 7),
+        ("Head of Research", 570000, 8),
+        ("Head of Development", 550000, 8),
+        ("Head of Human Resources", 300000, 9),
+        ("Private Security", 250000, 10),
+        ("Building Security", 120000, 10);
+      
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES  ("Tony", "Stark", 1, 1),
+        ("Steve", "Rodgers", 2, 2),
+        ("Natasha", "Romanoff", 3, 2),
+        ("Pepper", "Potts", 4, 2),
+        ("Clint", "Barton", 5, 3),
+        ("Scott", "Lang", 6,),
+        ("Bruce", "Banner", 7,),
+        ("James", "Rhodes", 8,),
+        ("Kate", "Bishop", 9,),
+        ("Shannon", "Carter", 10,),
+        ("Sam", "Wilson", 11,),
+        ("Peter", "Parker", 12,),
+        ("Stephen", "Strange", 13,),
+        ("Matt", "Murdock", 14,),
+        ("James", "Barnes", 15,),
+        ("Prince", "T'Challa", 16,),
+        ("Princess", "Shuri", 17,),
+        ("Peter", "Quill", 18,),
+        ("Pietro", "Maximoff", 19,),
+        ("Rocket", "Raccoon", 20,);
