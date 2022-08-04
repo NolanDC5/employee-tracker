@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const db = require ("./db/connection");
+const db = require ("./db/connection.js");
 const consoleTable = require(console.table)
 
 function userPrompt() {
