@@ -21,6 +21,7 @@
   "dependencies": {
     "console.table": "^0.10.0",
     "inquirer": "^8.0.0",
+    "mysql-native": "^0.4.7",
     "mysql2": "^2.3.3"
   }
 }

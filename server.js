@@ -47,21 +47,21 @@ function userPrompt() {
     });    
 };
 
-function viewDepartments() { db.query({sql:'SELECT * FROM departments'}, (errors, results, fields) => {
+function viewDepartments() { db.query({sql:'SELECT * FROM departments'}, (errors, results) => {
     if(errors) {console.log(errors.message)};
     console.table(results);
     userPrompt();
 });
 };
 
-function viewRoles() { db.query({sql:'SELECT * FROM roles'}, (errors, results, fields) => {
+function viewRoles() { db.query({sql:'SELECT * FROM roles'}, (errors, results) => {
     if(errors) {console.log(errors.message)};
     console.table(results);
     userPrompt();
 });
 };
 
-function viewEmployees() { db.query({sql:'SELECT * FROM employees'}, (errors, results, fields) => {
+function viewEmployees() { db.query({sql:'SELECT * FROM employees'}, (errors, results) => {
     if(errors) {console.log(errors.message)};
     console.table(results);
     userPrompt();
@@ -69,7 +69,6 @@ function viewEmployees() { db.query({sql:'SELECT * FROM employees'}, (errors, re
 };
 
 function addDepartment() {
-    
     return inquirer.prompt(
         {
             type: 'input',
@@ -93,12 +92,11 @@ function addDepartment() {
 };
 
 function addRole() {
-
     return inquirer.prompt([
         {
             type: 'input',
             name: 'title',
-            message: 'What is the new roles title?'
+            message: 'What is the title of the new role?'
         },
         {
             type: 'number',
@@ -166,7 +164,6 @@ function addEmployee() {
 }
 
 function updateRole() {
-    
     return inquirer.prompt([
         {
             type: 'number',
